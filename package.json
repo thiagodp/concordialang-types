@@ -21,6 +21,9 @@
     "plugin",
     "plug-in"
   ],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "tsc",
     "postversion": "git push && git push --tags"
