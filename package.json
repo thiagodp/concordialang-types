@@ -1,0 +1,50 @@
+{
+  "name": "concordialang-types",
+  "version": "0.1.0",
+  "description": "Basic types used by Concordia Language and plug-ins",
+  "license": "AGPL-3.0",
+  "readme": "readme.md",
+  "homepage": "https://github.com/thiagodp/concordialang-types#readme",
+  "author": {
+    "name": "Thiago Delgado Pinto",
+    "email": "thiago-dp@bol.com.br"
+  },
+  "keywords": [
+    "concordialang",
+    "concordia-lang",
+    "concordia",
+    "type",
+    "ast",
+    "test",
+    "script",
+    "test-script",
+    "plugin",
+    "plug-in"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "postversion": "git push && git push --tags"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodp/concordialang-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thiagodp/concordialang-types/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.6",
+    "typescript": "^3.3.4000"
+  }
+}
