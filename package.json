@@ -1,6 +1,6 @@
 {
   "name": "concordialang-types",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Basic types used by Concordia Language and plug-ins",
   "license": "AGPL-3.0",
   "readme": "readme.md",
