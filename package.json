@@ -21,7 +21,8 @@
     "plugin",
     "plug-in"
   ],
-  "main": "dist/index.js",
+  "main": "dist",
+  "types": "dist",
   "files": [
     "dist/*"
   ],
