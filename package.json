@@ -27,7 +27,8 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
+    "preversion": "npm run build",
     "postversion": "git push && git push --tags"
   },
   "jest": {
@@ -50,6 +51,7 @@
   },
   "devDependencies": {
     "@types/node": "^11.11.6",
+    "rimraf": "^2.6.3",
     "typescript": "^3.3.4000"
   }
 }
