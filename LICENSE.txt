@@ -1,4 +1,4 @@
-Concordia
+concordialang-types
 
 Copyright (c) Thiago Delgado Pinto
 
