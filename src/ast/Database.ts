@@ -1,4 +1,3 @@
-import { ConnectionResult } from '../req/ConnectionResult';
 import { HasItems, HasValue, NamedNode } from './Node';
 import { ListItem } from './ListItem';
 
@@ -19,7 +18,6 @@ import { ListItem } from './ListItem';
  * @author Thiago Delgado Pinto
  */
 export interface Database extends NamedNode, HasItems< DatabaseProperty > {
-    connectionResult: ConnectionResult;
 }
 
 /**
