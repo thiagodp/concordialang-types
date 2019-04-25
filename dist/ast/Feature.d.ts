@@ -1,6 +1,6 @@
 import { NamedNode } from './Node';
 import { MayHaveTags } from './Tag';
-import { Text } from '../ast/Text';
+import { Text } from './Text';
 import { Scenario } from './Scenario';
 import { UIElement } from './UIElement';
 import { Background } from './Background';
