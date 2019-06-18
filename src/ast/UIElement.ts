@@ -15,7 +15,7 @@ import { MayHaveTags } from './Tag';
 export interface UIElement extends NamedNode, MayHaveTags {
     items: UIProperty[];
 
-    info?: UIElementInfo; // information added during the semantic analyzis
+    info?: UIElementInfo; // information added during the semantic analysis
 }
 
 /**
@@ -23,7 +23,7 @@ export interface UIElement extends NamedNode, MayHaveTags {
  *
  * @author Thiago Delgado Pinto
  */
-export interface UIProperty extends ListItem {
+export interface UIProperty extends ListItem, MayHaveTags {
 
     otherwiseSentences: Step[];
 

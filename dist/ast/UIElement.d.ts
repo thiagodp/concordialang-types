@@ -20,7 +20,7 @@ export interface UIElement extends NamedNode, MayHaveTags {
  *
  * @author Thiago Delgado Pinto
  */
-export interface UIProperty extends ListItem {
+export interface UIProperty extends ListItem, MayHaveTags {
     otherwiseSentences: Step[];
     nlpResult: NLPResult;
     property: string;
