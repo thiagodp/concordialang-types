@@ -20,7 +20,7 @@ export interface TestCase extends NamedNode, MayHaveTags {
      * differently from its postconditions declare, making the test fail.
      * So, since it is expected that the test will fail, it should pass.
      */
-    shoudFail?: boolean;
+    shouldFail?: boolean;
 
     /**
      * Indicates that it is a generated test case, i.e., not declared manually.
