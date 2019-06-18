@@ -5,6 +5,23 @@ import { Node, HasName, HasContent } from './Node';
  * @author Thiago Delgado Pinto
  */
 export interface Tag extends Node, HasName, HasContent {
+    subType?: ReservedTags;
+}
+/**
+ * Reserved tags.
+ *
+ * @author Thiago Delgado Pinto
+ */
+export declare enum ReservedTags {
+    GENERATED = "generated",
+    FAIL = "fail",
+    FEATURE = "feature",
+    SCENARIO = "scenario",
+    VARIANT = "variant",
+    GLOBAL = "global",
+    IGNORE = "ignore",
+    IMPORTANCE = "importance",
+    GENERATE_ONLY_VALID_VALUES = "generate-only-valid-values"
 }
 /**
  * Allows to define something that may have tags.

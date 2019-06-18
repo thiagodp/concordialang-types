@@ -24,6 +24,30 @@ import { Node, HasName, HasContent } from './Node';
  * @author Thiago Delgado Pinto
  */
 export interface Tag extends Node, HasName, HasContent {
+
+    subType?: ReservedTags;
+}
+
+/**
+ * Reserved tags.
+ *
+ * @author Thiago Delgado Pinto
+ */
+export enum ReservedTags {
+
+    GENERATED = 'generated', // example: @generated
+    FAIL = 'fail', // example: @fail
+
+    FEATURE = 'feature', // example: @feature( <name> )
+    SCENARIO = 'scenario', // example: @scenario( <index> )
+    VARIANT = 'variant', // example: @variant( <index> )
+
+    GLOBAL = 'global', // example: @global
+    IGNORE = 'ignore', // example: @ignore
+    IMPORTANCE = 'importance', // example: @importance( 5 )
+
+    GENERATE_ONLY_VALID_VALUES = 'generate-only-valid-values' // example: @generate-only-valid-values
+
 }
 
 /**
