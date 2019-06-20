@@ -1,3 +1,2 @@
-export * from './ast';
-export * from './nlp';
-export * from './req';
+export * from './AbstractDatabase';
+export * from './Location';
