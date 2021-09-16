@@ -1,6 +1,6 @@
 {
   "name": "concordialang-types",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Basic types for Concordia Compiler and its plug-ins",
   "homepage": "https://github.com/thiagodp/concordialang-types",
   "license": "AGPL-3.0",
@@ -32,17 +32,17 @@
     "dist/*"
   ],
   "source": "src/index.ts",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"No tests\" && exit 1",
+    "test": "echo \"No tests to run.\"",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "build": "microbundle --no-sourcemap --target node --format esm,cjs",
-    "preversion": "npm run build",
-    "postversion": "git rebase -i HEAD~2",
+    "all": "npm run build && npm run test",
+    "preversion": "npm run all",
     "fixup": "git commit --fixup HEAD && git rebase --autosquash -i HEAD~2 && git push --force"
   },
   "devDependencies": {
@@ -50,6 +50,6 @@
     "rimraf": "^3.0.2"
   },
   "engines": {
-    "node": ">=12.20"
+    "node": ">=10"
   }
 }
